@@ -1,0 +1,9 @@
+services:
+    app:
+        build:
+            context: ./services/app
+            dockerfile: Dockerfile
+        volumes:
+            - ../app:/var/www/html
+        ports:
+            - "8080:8080"
